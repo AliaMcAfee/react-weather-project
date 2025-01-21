@@ -5,6 +5,7 @@ export default function App() {
   return (
     <div className="App">
       <h1>React Weather Project</h1>
+      <Weather />
       <footer>
         This project was coded by Alia McAfee open-sourced on{" "}
         <a href="https://github.com/AliaMcAfee/react-weather-project.git">
