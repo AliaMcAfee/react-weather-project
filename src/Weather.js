@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 import "./Weather.css";
 
 export default function Weather() {
@@ -11,6 +12,7 @@ export default function Weather() {
               type="search"
               placeholder="Enter a city..."
               className="form"
+              autoFocus="on"
             ></input>
           </div>
           <div className="col-3">
@@ -37,7 +39,9 @@ export default function Weather() {
             src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
             alt="Partly Cloudy"
           />
-          24°
+
+          <span className="temperature">24</span>
+          <span className="unit">°F|°C</span>
         </div>
         <div className="col-6">
           <ul>

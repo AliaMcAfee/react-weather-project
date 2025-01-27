@@ -6,7 +6,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <h1>React Weather Project</h1>
+        <h2>React Weather Project</h2>
         <Weather />
         <p>
           This project was coded by Alia McAfee and is open sourced on{" "}

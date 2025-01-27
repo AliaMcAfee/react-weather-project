@@ -1,1 +1,52 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
 
+.Weather {
+  padding: 16px;
+  margin: 30px auto;
+}
+
+.Weather .form {
+  width: 90%;
+  margin: auto;
+}
+
+.Weather .btn {
+  margin: auto;
+}
+
+.Weather h1 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 10px;
+  padding: 5px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.Weather ul {
+  margin: 10px;
+  padding: 13px;
+}
+.Weather li {
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 20px;
+  list-style: none;
+}
+
+.Weather img {
+  float: left;
+}
+
+.Weather .temperature {
+  font-size: 64px;
+}
+
+.Weather .unit {
+  font-size: 16px;
+  position: relative;
+  top: -34px;
+  margin-left: 5px;
+}
