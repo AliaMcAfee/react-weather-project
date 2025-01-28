@@ -5,6 +5,9 @@ body {
 .Weather {
   padding: 16px;
   margin: 30px auto;
+  border: 2px solid grey;
+  border-radius: 5px;
+  background-color: rgba(240, 239, 239, 0.922);
 }
 
 .Weather .form {
@@ -22,7 +25,7 @@ body {
   line-height: 10px;
   padding: 5px;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -37,13 +40,14 @@ body {
   list-style: none;
 }
 
-.Weather img {
-  float: left;
+.Weather canvas {
+  margin: 10px auto;
 }
 
 .Weather .temperature {
   font-size: 64px;
-  padding: 5px;
+  margin-left: 10px;
+  font-weight: bold;
 }
 
 .Weather .unit {

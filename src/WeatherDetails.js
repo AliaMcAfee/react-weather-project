@@ -7,10 +7,10 @@ export default function WeatherDetails(props) {
   return (
     <div className="WeatherDetails">
       <h1>{props.data.city}</h1>
-      <div className="row mt-3">
+      <div className="row">
         <div className="col-6">
           <div className="d-flex">
-            <div>
+            <div className="weather-icon">
               <WeatherSvg code={props.data.icon} size={52} />
             </div>
 
