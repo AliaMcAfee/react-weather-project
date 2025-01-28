@@ -12,3 +12,7 @@
   font-size: 20px;
   margin: 10px 0;
 }
+
+.App p {
+  text-align: center;
+}
