@@ -1,8 +1,7 @@
 import React from "react";
 import Date from "./Date";
 import Temperature from "./Temperature";
-import WeatherIcon from "./WeatherSvg";
-import { WeatherSvg } from "weather-icons-animated";
+import WeatherSvg from "./WeatherSvg";
 
 export default function WeatherDetails(props) {
   return (
@@ -12,7 +11,7 @@ export default function WeatherDetails(props) {
         <div className="col-6">
           <div className="d-flex">
             <div>
-              <WeatherSvg />
+              <WeatherSvg code={props.data.icon} size={52} />
             </div>
 
             <div>
