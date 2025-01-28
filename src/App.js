@@ -12,7 +12,7 @@ export default function App() {
           This project was coded by Alia McAfee and is open sourced on{" "}
           <a
             href="https://github.com/AliaMcAfee/react-weather-project.git"
-            target="blank"
+            target=" _blank"
             rel="noopener noreferrer"
           >
             Github
@@ -20,7 +20,7 @@ export default function App() {
           and hosted on{" "}
           <a
             href="http://app.netlify.com/sites/shc-react-weather-project/deploys/6798577ac6d692f2ef4fa3dc"
-            target="blank"
+            target="_blank"
             rel="noopener noreferrer"
           >
             Netlify.
