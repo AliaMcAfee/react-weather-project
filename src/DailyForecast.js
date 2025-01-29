@@ -1,5 +1,5 @@
 import React from "react";
-import WeatherIcon from "./WeatherSvg";
+import WeatherSvg from "./WeatherSvg";
 
 export default function DailyForecast(props) {
   function maxTemperature() {
@@ -23,15 +23,11 @@ export default function DailyForecast(props) {
 
   return (
     <div>
-      <div className="WeatherForecast-day">{day()}</div>
-      <WeatherIcon code={props.data.weather[0].icon} size={36} />
-      <div className="WeatherForecast-temperatures">
-        <span className="WeatherForecast-temperature-max">
-          {maxTemperature()}
-        </span>
-        <span className="WeatherForecast-temperature-min">
-          {minTemperature()}
-        </span>
+      <div className="Weather-day">{day()}</div>
+      <WeatherSvg code={props.data.weather[0].icon} size={36} />
+      <div className="Weather-temperatures">
+        <span className="Weather-temperature-max">{maxTemperature()}</span>
+        <span className="Weather-temperature-min">{minTemperature()}</span>
       </div>
     </div>
   );
