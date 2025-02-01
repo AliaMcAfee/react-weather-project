@@ -10,7 +10,7 @@ export default function WeatherDetails(props) {
       <div className="row">
         <div className="col-6">
           <div className="d-flex">
-            <div className="weather-icon">
+            <div>
               <WeatherSvg code={props.data.icon} size={52} />
             </div>
 
