@@ -13,26 +13,29 @@ export default function Forecast(props) {
   }
 
   if (loaded) {
-    console.log(forecast);
     return (
       <div className="Forecast">
         <div className="row">
           <div className="col">
-            <div className="ForecastDay">{forecast[0].dt}</div>
-            <WeatherSvg code={forecast[0].weather[0].icon} />
+            <div className="ForecastDay">{forecast[0].temperature.day}</div>
+            <WeatherSvg code={forecast[0].icon} />
             <div className="ForecastTemperature">
-              <span className="temperature-max">{forecast[0].temp.max}°</span>{" "}
-              <span className="temperature-min">{forecast[0].temp.min}°</span>
+              <span className="temperature-max">
+                {forecast[0].temperature.maximum}°
+              </span>{" "}
+              <span className="temperature-min">
+                {forecast[0].temperature.minimum}°
+              </span>
             </div>
           </div>
         </div>
       </div>
     );
   } else {
-    let apiKey = "8c5ce5cfb11389835425fc6066c06e13";
+    let apiKey = "04d7a4ta8ecdfa4b30ebd32f8c464o31";
     let longitude = props.coordinates.lon;
     let latitude = props.coordinates.lat;
-    let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${longitude}&lat=${latitude}&key=${apiKey}&units=metric`;
 
     axios.get(apiUrl).then(handleResponse);
 
