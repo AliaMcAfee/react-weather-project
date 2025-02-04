@@ -23,7 +23,7 @@ export default function ForecastDay(props) {
   return (
     <div>
       <div className="ForecastDay">{day()}</div>
-      <WeatherSvg code={props.data.condition.icon} />
+      <WeatherSvg code={props.data.condition.icon} isForecast />
       <div className="ForecastTemperature">
         <span className="temperature-max">{temperatureMax()}°</span>{" "}
         <span className="temperature-min">{temperatureMin()}°</span>
